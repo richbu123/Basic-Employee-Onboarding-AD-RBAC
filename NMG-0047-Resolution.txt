@@ -1,0 +1,16 @@
+Ticket number: NMG-0047
+
+Affected user: Jane Cooper (jcooper@NMG.com)
+
+Issue reported: Unable to access HR shared resources. Desktop policies and mapped drives differ from teammates.
+
+Root cause: Jane is in the Operations OU and a part of the Operations-Users which influence her experience. She can login because this is not an identity issue where the domain controller thinks she does not exist. This is an identity issue where because she is in the Operations OU and Operations-Users group that impacts her desktop setup and access to certain company resources. She is not allowed to access to HR resources while in the wrong groups and OUs. 
+
+
+Fix applied: I removed from the Operations OU and Operations-Users groups and added her to the HR OU and the HR-Users group. Jane is in HR which means she needs to be added to those to have the same experience as others in HR.
+
+Verification: I called Jane and confirmed that she could access what HR normally accesses and that her desktop experience reflects her coworkers.
+
+Date resolved: 8/25/2026
+
+Resolved by: Richard Buie
