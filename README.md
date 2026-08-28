@@ -7,7 +7,7 @@ Northstar Medical Group (NMG) relied on an MSP to handle the user lifecycle and 
 I built a server on a VM to server as NMGs new Domain Controller (DC). This DC serves as the basis of identity authentication in the environment; Each sign in goes back to the Domain Controller to ask if this person exists in the environment and what should they be able to access along with what their experience in the environment should be. Next was the OUs and the security groups. These combined allows for Role Based Access (RBAC) where we can assign certain privileges based on what a user does for their job. OUs and Security Groups were made for each department and users were added for proper management. This is better than the old model as there is consistent access management which lessens the possibilities of breaches due to Broken Access Management. 
 
 ## Video Walkthrough
-youtube.com
+[Walkthrough](https://www.loom.com/share/b3176eebff764f718736a007a3cd6866)
 
 ## Tools Used
 * Windows Server
